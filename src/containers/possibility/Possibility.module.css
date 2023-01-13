@@ -1,0 +1,73 @@
+.possibility {
+  display: flex;
+  flex-direction: row;
+}
+
+.possibilityimg {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-right: 2rem;
+}
+
+.possibilityimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.possiblitycontent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.possiblitycontent h4 {
+  font-family: var(--font-family);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #71e5ff;
+}
+
+.possiblitycontent h4:last-child {
+    color: #ff8a71;
+}
+
+.possiblitycontent h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  margin: 1rem 0;
+}
+.possiblitycontent p {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  margin-top: 2rem;
+
+}
+
+@media screen and (max-width:950px) {
+
+    .possibility{
+        flex-direction: column;
+    }
+
+    .possibilityimg{
+        margin: 1rem 0;
+    }
+    
+    .possiblitycontent{
+        margin-top: 2rem;
+    }
+}

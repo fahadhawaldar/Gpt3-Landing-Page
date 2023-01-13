@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+}
+.headercontent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+.headercontent h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+.headercontent p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: var(--font-family);
+  color: var(--color-text);
+
+  margin-top: 1.5rem;
+}
+
+.headerinput {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+}
+.headerinput input {
+  outline: none;
+  border: none;
+  background: var(--color-footer);
+  border-radius: 5px 0px 0px 5px;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: var(--font-family);
+  color: #fff;
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+}
+
+.headerinput button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  background: #ff4820;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+.headerpeople {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.headerpeople img {
+  width: 181.79px;
+  height: 38px;
+}
+
+.headerpeople p {
+  margin: 0 0 0 1rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.headerimage{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerimage img {
+    width: 100%;
+    height: 100%;
+
+}
+@media screen and (max-width: 1050px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .headercontent{
+        margin: 0 0 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .headerpeople{
+        flex-direction: column;
+    }
+
+    .headerpeople p{
+        margin: 0;
+    }
+
+    .headerinput input, .headerinput button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .headerinput input, .headerinput button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}
